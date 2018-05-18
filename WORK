@@ -1,0 +1,14 @@
+WORK
+rails generate simple_form:install --bootstrap. => télécharge le html de simple form
+
+mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
+=> ca met dans assets > stylesheets > applications.scss ca change en scss et on y met:
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+rails generate scaffold article title body:text
+SCAFFOLD ca créé tout un échafaudage de base = ne pas faire au dela du bricolage
+
+puis rails db:migrate
